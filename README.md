@@ -7,14 +7,14 @@ use protein identifier and the amino acid substitution in the conventional one l
 
 Then, Select the features using FATHMM cancer, FATHMM disease, Polyphen-2, Mutation assessor and NetSurf Protein to get the 27 features.
 
-## Four features selected from FATHMM cancer including: HMM Weights D., HMM Weights O.,HMM Prob W. and HMM Prob M..
-## One feature selected from FATHMM disease which is HMM Weights D..
-## One feature selected from Mutation Assessor which is Functional Impact score (FI).
-## Nine features selected from PolyPhen-2 including: site, region, PHAT, PSIC Score1, dScore, Transv, CodPos, CpG and PfamHit. 
+- Four features selected from FATHMM cancer including: HMM Weights D., HMM Weights O.,HMM Prob W. and HMM Prob M..
+- One feature selected from FATHMM disease which is HMM Weights D..
+- One feature selected from Mutation Assessor which is Functional Impact score (FI).
+- Nine features selected from PolyPhen-2 including: site, region, PHAT, PSIC Score1, dScore, Transv, CodPos, CpG and PfamHit. 
 
 The last source of features was the protein  surface accessibility and secondary structure predictions (NetSurfP) server.
-## Twelve features selected from (NetSurfP) each feature is provided twice, one for the wild type amino acid and one for 
-## the mutant amino acid, include: Class assignment (B for buried or E for Exposed), relative surface accessibility (RSA), absolute surface accessibility, Probability for Alpha-Helix, Probability for Beta-strand and Probability for Coil.
+- Twelve features selected from (NetSurfP) each feature is provided twice, one for the wild type amino acid and one for 
+the mutant amino acid, include: Class assignment (B for buried or E for Exposed), relative surface accessibility (RSA), absolute surface accessibility, Probability for Alpha-Helix, Probability for Beta-strand and Probability for Coil.
 
 
 Finaly, use random forest classifier to predict LOF and GOF in cancer- associated mutation.
